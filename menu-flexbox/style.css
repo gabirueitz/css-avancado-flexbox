@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+:root {
+    --color1: #5bc241;
+    --color2: black;
+    --color3: white;
+
+}
+
+header {
+    font-family: "Public Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo figcaption {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    text-align: center;
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+#cadastre-se {
+    text-align: center;
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 30px;
+    }
+
+    .logo figcaption {
+        font-size: 40px;
+    }
+
+    nav {
+        font-size: 38px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    a {
+        width: 200px;
+    }
+}
